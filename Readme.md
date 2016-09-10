@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [John Smith](https://up.htmlacademy.ru/adaptive/8/user/199869).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Козлов](https://htmlacademy.ru/profile/id27386).
 
 ---
 
