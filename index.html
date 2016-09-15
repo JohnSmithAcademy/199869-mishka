@@ -6,7 +6,195 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="page-header">
+      <h1 class="visually-hidden">MISHKA</h1>
+      <div class="header__logo">
+        <a href="#">
+          <img src="http://placehold.it/150x100" alt="Logo">
+        </a>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__item"><a href="#">Корзина: пока пустая</a></li>
+          </ul>>
+        </div>
+      </nav>
+    </header>
 
+    <main class="page-main">
+
+      <section class="page-main__intro">
+        <h2 class="slogan">Милые штуки<br> ручной<br> работы для дома</h2>
+
+        <table class="page-main__stock">
+          <tr class="page-main__stock-category">
+            <td>
+              <a href="#">Предметы интерьера</a>
+            </td>
+            <td>
+              <a href="#">
+                <img src="http://placehold.it/150x100" alt="Interior">
+              </a>
+            </td>
+          </tr>
+          <tr class="page-main__stock-category">
+            <td>
+              <a href="#">Детские игрушки</a>
+            </td>
+            <td>
+              <a href="#">
+                <img src="http://placehold.it/150x100" alt="Toys">
+              </a>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="page-main__showcase">
+        <article class="product  product--full-preview">
+            <h1 class="product__title">Вязаные корзинки</h1>
+            <h2 class="product__label">ТОВАР НЕДЕЛИ</h2>
+
+            <p class="product__description">
+              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+            </p>
+
+            <table class="product__specs">
+              <tr class="product__color">
+                <td>Цвет</td>
+                <td>:</td>
+                <td>«Тиффани»/серый</td>
+                <td>,</td>
+              </tr>
+              <tr class="product__diameter">
+                <td>Диаметр</td>
+                <td>:</td>
+                <td>25 см</td>
+                <td>,</td>
+              </tr>
+              <tr class="product__height">
+                <td>Высота</td>
+                <td>:</td>
+                <td>15 см</td>
+                <td>,</td>
+              </tr>
+              <tr class="product__weight ">
+                <td>вес</td>
+                <td>:</td>
+                <td>200 г</td>
+                <td>.</td>
+              </tr>
+            </table>
+
+            <img class="product__image" src="http://placehold.it/150x100" alt="Product">
+            <p class="product__price">
+              <span>Цена:</span> 990 руб.
+            </p>
+
+            <a href="#" class="product__order btn">ЗАКАЗАТЬ</a>
+        </article>
+      </section>
+
+      <table class="page-main__about-summary">
+        <tr>
+          <th>Коротко о нас:</th>
+        </tr>
+        <tr>
+          <td><img src="http://placehold.it/150x100" alt="Icon-1"></td>
+          <td>Экологически чистые материалы</td>
+        </tr>
+        <tr>
+          <td><img src="http://placehold.it/150x100" alt="Icon-2"></td>
+          <td>Скандинавский стиль по российской цене</td>
+        </tr>
+        <tr>
+          <td><img src="http://placehold.it/150x100" alt="Icon-3"></td>
+          <td>Увеличивает лайки на фотографиях</td>
+        </tr>
+        <tr>
+          <td><img src="http://placehold.it/150x100" alt="Icon-4"></td>
+          <td>Связано вручную с любовью и умилением</td>
+        </tr>
+        <tr>
+          <td><img src="http://placehold.it/150x100" alt="Icon-5"></td>
+          <td>Поддержка отечественного производителя</td>
+        </tr>
+        <tr>
+          <td><img src="http://placehold.it/150x100" alt="Icon-6"></td>
+          <td>Поставляется в подарочной упаковке</td>
+        </tr>
+      </table>
+
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <b class="reviews__title">Отзывы</b>
+
+          <input class="slider__input" type="radio" name="reviews" id="reviews-prev" checked>
+          <input class="slider__input" type="radio" name="reviews" id="reviews-next" checked>
+
+          <div class="reviews__items">
+
+            <article class="review-item slider__item">
+              <blockquote>
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
+              </blockquote>
+              <cite>
+                <span class="review-item__author-name">Анастасия Красильникова</span>
+                <span class="review-item__author-nickname">@misssssiskras</span>
+              </cite>
+            </article>
+
+          </div>
+
+          <label class="reviews__prev" for="reviews-prev">Предыдущий отзыв</label>
+          <label class="reviews__next" for="reviews-next">Следующий отзыв</label>
+
+          <a class="reviews__write btn" href="">Написать</a>
+        </div>
+      </section>
+
+      <section class="contacts">
+
+        <b class="contacts__title">Контакты</b>
+
+        <label for="email" class="contacts__email">
+          <span>e-mail:</span>
+          <input id="email" type="email" placeholder="info@mimimishkashop.ru">
+        </label>
+
+        <span class="contacts__address-title">адрес:</span>
+        <address class="contacts__address">
+          г. Санкт-Петербург,
+          ул. Большая Конюшенная,
+          д. 19/8, офис 101
+        </address>
+
+        <section class="map">
+
+        </section>
+
+        <a class="contacts__write btn" href="">Нaпишите нам</a>
+
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__social">
+        <span class="social-links">
+          <a class="social-link social-link--in" href="#"></a>
+          <a class="social-link social-link--fb" href="#"></a>
+          <a class="social-link social-link--tw" href="#"></a>
+        </span>
+      </p>
+      <p class="page-footer__copyright">
+        Разработано:
+        <a class="btn page-footer__copyright-link" href="#"></a>
+      </p>
+    </footer>
   </body>
 </html>
